@@ -1,12 +1,12 @@
 import React from 'react';
-import NavbarTitle from './components/navigation/NavbarTitle';
+import Header from './Header';
 
 function App() {
   return (
     <>
-      <nav>
-        <NavbarTitle />
-      </nav>
+      <div className="bg-black">
+        <Header />
+      </div>
     </>
   );
 }
