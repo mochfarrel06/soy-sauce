@@ -9,6 +9,11 @@ function Header() {
   };
   const hide = () => setToggleMenu(false);
 
+  const textTitle = {
+    title: 'KecapSawi',
+    txt: 'Sign Up',
+  };
+
   const navigation = [
     { link: '#', text: 'Home' },
     { link: '#', text: 'Kind of product' },
@@ -16,16 +21,16 @@ function Header() {
   ];
 
   return (
-    <div className="max-w-full bg-white shadow-md shadow-gray">
+    <div className="bg-white shadow-md shadow-gray fixed top-0 left-0 w-full">
       <div className="lg:container">
-        <div className="px-8 py-4 z-50 overflow-hidden lg:py-5">
+        <div className="px-6 py-4 z-50 overflow-hidden lg:py-5">
           <div className="flex justify-between items-center">
             {/* Primary menu and logo */}
             <div className="flex justify-between md:w-full">
               {/* Logo */}
               <div>
                 <a href="" className="font-bold text-lg tracking-wide text-primary md:text-xl lg:text-2xl">
-                  KecapSawi
+                  {textTitle.title}
                 </a>
               </div>
               {/* Menu */}
