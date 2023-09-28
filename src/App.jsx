@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './components/Header';
-import HomeItem from './components/HomeItem';
-import ProductItem from './components/ProductItem';
-import ProductApp from './components/ProductApp';
+import Header from './components/header-components/Header';
+import HomeItem from './components/home-components/HomeItem';
+import ProductApp from './components/product-components/ProductApp';
+import AboutItem from './components/about-components/AboutItem';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <Header />
         <HomeItem />
         <ProductApp />
+        <AboutItem />
       </div>
     </>
   );
