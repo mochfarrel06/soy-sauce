@@ -1,22 +1,17 @@
 import React from 'react';
 import Header from './components/header-components/Header';
-import HomeItem from './components/home-components/HomeItem';
-import ProductApp from './components/product-components/ProductApp';
-import AboutItem from './components/about-components/AboutItem';
-import BannerItem from './components/banner-components/BannerItem';
 import FooterItem from './components/footer-components/FooterItem';
+import HomePage from './pages/HomePage';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <div className="">
-        <Header />
-        <HomeItem />
-        <ProductApp />
-        <AboutItem />
-        <BannerItem />
-        <FooterItem />
-      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+      <FooterItem />
     </>
   );
 }
