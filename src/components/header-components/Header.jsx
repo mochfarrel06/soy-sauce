@@ -64,42 +64,45 @@ function Header() {
                 {showModal ? (
                   <>
                     <div className="flex justify-between items-center overflow-x-hidden overflow-y-hidden fixed inset-0 z-50 outline-none focus:outline-none">
-                      <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                      <div className="relative my-6 mx-auto w-[30rem]">
                         {/* Content */}
-                        <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                        <div className="border-0 rounded-lg shadow-lg relative flex flex-col gap-14 w-full bg-white outline-none focus:outline-none px-5 py-6">
                           {/* Header */}
-                          <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                          <div className="flex items-center justify-between border-b border-solid border-slate-200 rounded-t">
                             <h3 className="font-semibold text-lg text-secondary tracking-wide">Create your account </h3>
                             <button onClick={() => setShowModal(false)}>
                               <AiOutlineClose />
                             </button>
                           </div>
                           {/* Body */}
-                          <div className="relative p-6 flex-auto">
-                            <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                              I always felt like I could do anything. That’s the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you
-                              can’t do anything, you won’t do anything. I was taught I could do everything.
-                            </p>
+                          <div className="relative flex flex-col flex-auto gap-5">
+                            <input
+                              type="text"
+                              placeholder="Your Name"
+                              className="block w-full px-3 py-3 bg-white border border-slate-300 rounded-md text-sm shadow placeholder-slate-400 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+                            />
+                            <input
+                              type="email"
+                              placeholder="Your Email"
+                              className="block w-full px-3 py-3 bg-white border border-slate-300 rounded-md text-sm shadow placeholder-slate-400 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+                            />
+                            <input
+                              type="password"
+                              placeholder="Your Password"
+                              className="block w-full px-3 py-3 bg-white border border-slate-300 rounded-md text-sm shadow placeholder-slate-400 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+                            />
                           </div>
                           {/*footer*/}
-                          <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                            <button
-                              className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                              type="button"
-                              onClick={() => setShowModal(false)}>
-                              Close
+                          <div className="flex flex-col gap-4 items-center">
+                            <button className="bg-secondary w-full text-white font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none ease-linear transition-all duration-150" type="button" onClick={() => setShowModal(false)}>
+                              Sign Up
                             </button>
-                            <button
-                              className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                              type="button"
-                              onClick={() => setShowModal(false)}>
-                              Save Changes
-                            </button>
+                            <p>I have an account ? Sign In</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                    <div className="opacity-40 fixed inset-0 z-40 bg-secondary"></div>
                   </>
                 ) : null}
               </div>
@@ -163,7 +166,7 @@ function Header() {
                             <input
                               type="text"
                               placeholder="Your Name"
-                              className="mt-1 block w-full px-3 py-3 bg-white border border-slate-300 rounded-md text-sm shadow placeholder-slate-400 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+                              className="block w-full px-3 py-3 bg-white border border-slate-300 rounded-md text-sm shadow placeholder-slate-400 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
                             />
                             <input
                               type="email"
@@ -186,7 +189,7 @@ function Header() {
                         </div>
                       </div>
                     </div>
-                    <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                    <div className="opacity-40 fixed inset-0 z-40 bg-secondary"></div>
                   </>
                 ) : null}
               </div>
