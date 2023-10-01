@@ -24,6 +24,7 @@ function Header() {
   return (
     <div className="bg-white shadow-md shadow-gray fixed top-0 left-0 w-full">
       <div className="lg:container">
+        {/* Menu */}
         <div className="px-6 py-4 z-50 overflow-hidden lg:py-5">
           <div className="flex justify-between items-center">
             {/* Primary menu and logo */}
