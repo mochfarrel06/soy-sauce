@@ -2,8 +2,8 @@ import React from 'react';
 
 function HomeItemImage() {
   return (
-    <div className="">
-      <img className="w-72 md:w-80 xl:w-96" src="./image/homeImg.png" alt="" />
+    <div className="overflow-hidden">
+      <img className="w-[15rem] max-[305px]:w-56 sm:w-64 md:w-72 lg:w-80 xl:w-96" src="./image/homeImg.png" alt="" />
     </div>
   );
 }
