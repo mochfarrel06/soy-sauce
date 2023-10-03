@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { FiMenu } from 'react-icons/fi';
 import HeaderItemTitle from './HeaderItemTitle';
-import { Link } from 'react-router-dom';
-import { AiOutlineClose } from 'react-icons/ai';
 
 function HeaderItem() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -12,11 +10,11 @@ function HeaderItem() {
   };
   const hide = () => setToggleMenu(false);
 
-  const navigation = {
-    text1: 'Home',
-    text2: 'Kind of product',
-    text3: 'Use product',
-  };
+  const navigation = [
+    { id: 1, text: 'Home' },
+    { id: 2, text: 'Kind of product' },
+    { id: 3, text: 'Use product' },
+  ];
 
   return (
     <div className="bg-white shadow-md z-50 fixed top-0 left-0 w-full">
@@ -36,21 +34,13 @@ function HeaderItem() {
                 <div className="w-full">
                   <div className="flex flex-col items-center gap-10 w-full md:flex-row md:justify-between">
                     <ul className="flex flex-col items-center gap-8 md:flex-row">
-                      <li>
-                        <a href="#" onClick={handleToogle} onBlur={hide} className="font-medium text-sm text-white tracking-wide hover:text-slate-400 transition ease-in-out duration-200 sm:text-base md:text-secondary xl:text-lg">
-                          {navigation.text1}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" onClick={handleToogle} onBlur={hide} className="font-medium text-sm text-white tracking-wide hover:text-slate-400 transition ease-in-out duration-200 sm:text-base md:text-secondary xl:text-lg">
-                          {navigation.text2}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" onClick={handleToogle} onBlur={hide} className="font-medium text-sm text-white tracking-wide hover:text-slate-400 transition ease-in-out duration-200 sm:text-base md:text-secondary xl:text-lg">
-                          {navigation.text3}
-                        </a>
-                      </li>
+                      {navigation.map((nav) => (
+                        <li key={nav.id}>
+                          <a href="#" onClick={handleToogle} onBlur={hide} className="font-medium text-sm text-white tracking-wide hover:text-slate-400 transition ease-in-out duration-200 sm:text-base md:text-secondary xl:text-lg">
+                            {nav.text}
+                          </a>
+                        </li>
+                      ))}
                     </ul>
                     <div className="flex justify-center">
                       <button
