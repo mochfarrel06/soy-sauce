@@ -1,16 +1,16 @@
-import React from 'react';
-import HomeItem from '../components/home-components/HomeItem';
-import AboutItem from '../components/about-components/AboutItem';
-import BannerItem from '../components/banner-components/BannerItem';
-import ProductApp from '../components/product-components/ProductApp';
+import React from "react";
+import ProductApp from "../components/product-components/ProductApp";
+import HeroSection from "../components/Home/HeroSection";
+import OverviewSection from "../components/Home/OverviewSection";
+import BannerSection from "../components/Home/BannerSection";
 
 function HomePage() {
   return (
     <>
-      <HomeItem />
+      <HeroSection />
       <ProductApp />
-      <AboutItem />
-      <BannerItem />
+      <OverviewSection />
+      <BannerSection />
     </>
   );
 }
