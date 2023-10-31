@@ -48,7 +48,7 @@ function Header() {
                       ))}
                     </ul>
                     <div className="flex justify-center">
-                      <ButtonMedium name={"Sign Up"} />
+                      <ButtonMedium title={"Sign Up"} />
                     </div>
                   </div>
                 </div>

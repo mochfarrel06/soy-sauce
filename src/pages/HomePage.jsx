@@ -1,13 +1,13 @@
 import React from "react";
 import ProductApp from "../components/product-components/ProductApp";
-import HeroSection from "../components/Home/HeroSection";
 import OverviewSection from "../components/Home/OverviewSection";
 import BannerSection from "../components/Home/BannerSection";
+import LandingPage from "../layouts/Main/Home/LandingPage";
 
 function HomePage() {
   return (
     <>
-      <HeroSection />
+      <LandingPage />
       <ProductApp />
       <OverviewSection />
       <BannerSection />
