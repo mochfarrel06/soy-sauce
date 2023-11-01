@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonSmall from "../../../../../components/Button/ButtonSmall";
+import ButtonSmall from "../../../../components/Button/ButtonSmall";
 
 function LandingPageButton({titlebtn1, titlebtn2}) {
   return (

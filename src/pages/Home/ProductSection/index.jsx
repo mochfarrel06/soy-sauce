@@ -1,6 +1,6 @@
 import React from "react";
 import ProductItemList from "./Components/ProductItemList";
-import {getProducts} from "../../../../utils/data";
+import {getProducts} from "../../../utils/data";
 
 class ProductApp extends React.Component {
   constructor(props) {

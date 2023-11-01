@@ -1,5 +1,5 @@
 import React from "react";
-import CardProduct from "../../../../../components/Card/CardProduct";
+import CardProduct from "../../../../components/Card/CardProduct";
 
 function ProductItemList({products}) {
   return (
