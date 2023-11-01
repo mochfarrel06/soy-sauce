@@ -1,5 +1,4 @@
 import React from "react";
-import BannerSection from "../components/Home/BannerSection";
 import LandingPage from "../layouts/Main/Home/LandingPage";
 import ProductApp from "../layouts/Main/Home/ProductSection";
 import Overview from "../layouts/Main/Home/OverviewSection";

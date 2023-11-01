@@ -1,8 +1,8 @@
 import React from "react";
 import HomePage from "./pages/HomePage";
 import {Route, Routes} from "react-router-dom";
-import FooterSection from "./components/Footer/FooterSection";
 import Header from "./layouts/Header";
+import Footer from "./layouts/Footer";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
-      <FooterSection />
+      <Footer />
     </>
   );
 }
