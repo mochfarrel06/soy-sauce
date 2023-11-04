@@ -1,21 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
       center: true,
-      padding: '16px',
+      padding: "16px",
     },
     extend: {
       screens: {
-        '2xl': '1320px',
+        "2xl": "1320px",
       },
       colors: {
-        primary: '#00782B',
-        secondary: '#013012',
-        yellow: '#C6FF25',
-        gray: '#EFEFEF',
-        gray2: '#A2A2A2',
+        primary: "#00782B",
+        secondary: "#013012",
+        yellow: "#C6FF25",
+        gray: "#EFEFEF",
+        gray2: "#A2A2A2",
       },
     },
   },

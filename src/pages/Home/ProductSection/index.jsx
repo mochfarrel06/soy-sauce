@@ -15,7 +15,7 @@ class ProductApp extends React.Component {
     return (
       <section className="pt-32 pb-32 w-full h-max md:pt-36 lg:pt-40 xl:pt-44 overflow-hidden">
         <div className="lg:container">
-          <div className="px-6 py-4 flex flex-col gap-20 lg:py-6">
+          <div className="px-6 py-4 flex flex-col gap-20 lg:py-6 lg:gap-20 xl:px-16">
             <div>
               <h3 className="font-semibold text-xl text-secondary tracking-wide lg:text-2xl">
                 The products we sell

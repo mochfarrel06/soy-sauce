@@ -1,6 +1,7 @@
 import React from "react";
-import Container from "./Components/Container";
+
 import LandingPageContainer from "./Components/LandingPageContainer";
+import Container from "../../../components/Container/Container";
 
 function LandingPage() {
   return (
