@@ -4,7 +4,7 @@ function HeaderItemTitle({title}) {
   return (
     <a
       href=""
-      className="font-bold text-lg tracking-wide text-primary md:text-xl lg:text-2xl"
+      className="font-bold text-base tracking-wide text-primary max-[305px]:text-sm md:text-lg lg:text-2xl"
     >
       {title}
     </a>

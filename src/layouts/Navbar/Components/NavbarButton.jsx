@@ -1,10 +1,10 @@
 import React from "react";
 import ButtonMedium from "../../../components/Button/ButtonMedium";
 
-function NavbarButton({title}) {
+function NavbarButton({title, hide}) {
   return (
     <div className="flex justify-center">
-      <ButtonMedium title={title} />
+      <ButtonMedium title={title} hide={hide} />
     </div>
   );
 }

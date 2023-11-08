@@ -19,8 +19,8 @@ function Header() {
 
   const navigation = [
     {id: 1, text: "Home"},
-    {id: 2, text: "Kind of product"},
-    {id: 3, text: "Use product"},
+    {id: 2, text: "Product"},
+    {id: 3, text: "Use Product"},
   ];
 
   return (
@@ -39,7 +39,7 @@ function Header() {
               />
             ))}
           </NavbarItemList>
-          <NavbarButton title={"Sign Up"} />
+          <NavbarButton title={"Sign Up"} hide={hide} />
         </NavbarContainer>
       </HeaderMenu>
       <HeaderToggle handleToogle={handleToogle}>
